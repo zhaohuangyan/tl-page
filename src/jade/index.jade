@@ -1,0 +1,247 @@
+extends templates/master
+
+block vars
+
+block title
+  |tiaoling
+
+block styles
+
+block content
+    section
+        nav.navbar.navbar-default(role="navigation").tl_header
+            div.row
+                div.col-md-3.text-center
+                    img(src="images/跳羚logo.png", alt="",style="width:15%")
+                div.col-md-7.text-center
+                    div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+                        ul.nav.navbar-nav
+                            li
+                                a(href="#test")
+                                    b.tl_nav 公司简介
+                            li
+                                a(href="") 
+                                    b.tl_nav 产品简介
+                            li
+                                a(href="")
+                                    b.tl_nav 行业分析
+                            li
+                                a(href="")
+                                    b.tl_nav 合作伙伴
+                            li
+                                a(href="")
+                                    b.tl_nav 团队介绍
+                            li
+                                a(href="")
+                                    b.tl_nav 联系我们
+    section.tl_two
+        div#carousel-example-generic.carousel.slide(data-ride="carousel")
+            ol.carousel-indicators
+                li(data-target="#carousel-example-generic" data-slide-to="0" class="active tl_yd")
+                li(data-target="#carousel-example-generic" data-slide-to="1").tl_yd
+                li(data-target="#carousel-example-generic" data-slide-to="2").tl_yd
+            div.carousel-inner(role="listbox")
+                div.item.active
+                    img(src="images/red-bg.jpg", alt="")
+                    div.carousel-caption
+                        button(type="button" class="btn btn-default tl_jump")
+                            |点击查看详情
+                div.item
+                    img(src="images/red-bg.jpg", alt="")
+                    div.carousel-caption
+                        button(type="button" class="btn btn-default tl_jump")
+                            |点击查看详情1
+                div.item
+                    img(src="images/red-bg.jpg", alt="")
+                    div.carousel-caption
+                        button(type="button" class="btn btn-default tl_jump")
+                            |点击查看详情2
+            a(class="left carousel-control" href="#carousel-example-generic" data-slide="prev").tl_left
+                span.fa.fa-chevron-left.fa-2x.prev
+            a(class="right carousel-control" href="#carousel-example-generic" data-slide="next").tl_right
+                span.fa.fa-chevron-right.fa-2x.next
+    section#tl_one
+        div.tl_block
+            div.row
+                div.col-md-12
+                    h3 解决方案
+                    a(href="#tl_one")
+                        span.fa.fa-angle-double-down.fa-2x.tl_bottom
+        div.tl_product
+            div.slider.slider-nav.tl_roll
+                div
+                    p.tl_row O2O
+                div
+                    p.tl_row 供应链
+                div
+                    p.tl_row 移动解决方案
+                div
+                    p.tl_row 仓储
+                div
+                    p.tl_row 快运
+                div
+                    p.tl_row 快递
+        div.tl_content
+            div.slider.slider-for
+                div.row
+                    div.col-md-6
+                        img(src="images/1.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 互联网时代已经到来，覆盖着我们生活的方方面面，传统行业在如此巨大的冲击下，如何让互联网成为队友而非对手，将线上互联网与线下传统行业完美结合，小酒窝将为您提供完整的O2O解决方案。
+                div.row
+                    div.col-md-6
+                        img(src="images/2.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 小酒窝通过对商品流，信息流，物流的控制与管理，帮助企业调用内外部资源实现价值最大化。从网站建设、CRM、OA等企业服务软件等线上服务，到定制商品仓储配一体化管理系统，打通线上订单管理、线下物流配送的企业供应链。
+                div.row
+                    div.col-md-6
+                        img(src="images/3.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 随着移动互联网的兴起，越来越多的客户注意到移动互联网的影响力。小酒窝致力于为客户提供PDA（数据采集器）、POS（移动支付终端）、APP（移动应用程序）、微信等移动应用解决方案。
+                div.row
+                    div.col-md-6
+                        img(src="images/delivery.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 小酒窝为您提供完善稳定的集货、加工、分货、拣选、配货、包装、客户关系等服务，提高工作管理效率，自主研发的各项系统成为仓配一体强有力的后盾，通过整合、优化仓储及配送，与合作伙伴强强联合，共同完善电子商务供应链。
+                div.row
+                    div.col-md-6
+                        img(src="images/express.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 通过系统调度、路由规划，可有效进行车货匹配、实现运输全程监控，实现快捷便利的货物干线运输；通过基于移动互联的不断创新，降低货物流通成本，实现用户利润最大化。在共享经济的时代背景下，开发了社会车辆补充调度系统-嘟嘟好运。
+                div.row
+                    div.col-md-6
+                        img(src="images/supply_chain.png", alt="")
+                    div.col-md-6
+                        p.tl_introduce 安全、快捷的将货物送达用户手中是快递的核心，小酒窝提供从订单流入、地址管理、货物分拣、终端配送系统等全流程系统支撑；并率先研发飞鱼移动配送软件，实现移动设备签收拍照、线上货款结算等功能，更好服务最后一公里配送业务。
+    section.tl_div#tl_two
+        div.tl_block
+            div.row
+                div.col-md-12
+                    h3 产品中心
+                    a(href="#tl_two")
+                        span.fa.fa-angle-double-down.fa-2x.tl_bottom
+            div.row
+                div#carousel-example-generic.carousel.slide(data-ride="carousel")
+                    ol.carousel-indicators.tl_yuandian
+                        li(data-target="#carousel-example-generic" data-slide-to="0" class="active").tl_yd
+                        li(data-target="#carousel-example-generic" data-slide-to="1").tl_yd
+                    div.carousel-inner(role="listbox")
+                        div.item.active
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+                        div.item
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+                            div.col-md-4
+                                img(src="images/跳羚logo.png", alt="",draggable="false")
+                                p 产品
+    section.tl_div#three
+        div.container.tl_block
+            div.row
+                div.col-md-12
+                    h3 客户案例
+                    a(href="#three")
+                        span.fa.fa-angle-double-down.fa-2x.tl_bottom
+            div.row
+                div.col-md-3
+                    img(src="images/vancl.jpg", alt="",draggable="false",class="tl_cooperation")
+                    h4 凡客诚品
+                    p.tl_customer 凡客诚品作为名列前茅的B2C自主销售式服装品牌，订单管理和货物调配是销售实现的重要环节。小酒窝提供的WMS（Warehouse management system）仓库管理系统，可实时订单获取、当天发货，支撑200万单/天的发货单量，库存差异率低于万分之六。
+                div.col-md-3
+                    img(src="images/tiandihuayu.jpg", alt="",draggable="false",class="tl_cooperation")
+                    h4 天地华宇
+                    p.tl_customer 做为中国公路快运行业的领先企业，天地华宇致力打造中国最强大、最快捷、最可靠的递送网络。小酒窝为天地华宇提供快运TMS系统、车货匹配系统、企业内部管理等信息系统服务。为天地华宇的54个货物转运中心、1500家营业网点和超过16000名员工提供信息支持服务。     
+                div.col-md-3
+                    img(src="images/rufengda.jpg", alt="",draggable="false",class="tl_cooperation")
+                    h4 如风达
+                    p.tl_customer 秉承“服务有起点，满意无终点”的服务理念，如风达国内第一家有电商基因的快递品牌。小酒窝为如风达提供商家信息对接、货物分拣处理、订单数据管理、货物流转监控、配送人员权限等全程技术支持。
+                div.col-md-3
+                    img(src="images/tobacco.jpg", alt="",draggable="false",class="tl_cooperation")
+                    h4 中国烟草
+                    p.tl_customer 小酒窝为广西中烟提供基于SOLOMO模式的整体物流O2O解决方案。建设项目内包括区域调度、虚拟云仓；门店管理系统、社会人员众包配送等内容；实现了线上订单管理、线下货物流通的全程管理。
+            div.row
+                div.col-md-3
+                    img(src="images/zhongce.jpg", alt="",draggable="false",class="tl_cooperation")
+                    h4 中策橡胶
+                    p.tl_customer 中策橡胶为中国最大的轮胎生产企业，世界500强企业363位（2012）；日吞吐量＞8万单的仓库就超过40个（仅杭州市），每天超过十万计的轮胎发往全国各地。小酒窝提供解决方案帮助中策打通商品与用户之间的数据和商品流转关系。
+                div.col-md-3
+                    img(src="images/wjk.jpg", alt="",draggable='false',class="tl_cooperation")
+                    h4 万家康
+                    p.tl_customer 一家传统的冷链仓储、配送公司，小酒窝为其量身订制了一整套的信息化解决方案，包括配送系统、仓储系统、移动POS机，移动PDA等，在系统的辅助下，从出货到配送到客户减少了一个工作日，缩短了配送流程，节约时间成本。
+                div.col-md-3
+                    a(href="")
+                        span.glyphicon.glyphicon-plus.tl-more
+    section.tl_div
+        div.container.tl_footer
+            div.row.tl_block
+                div.col-md-12
+                    h3 联系我们
+            div.row
+                div.col-md-5
+                    div.row
+                        div.col-md-12
+                            ul.nav-justified
+                                li
+                                    p(class="tl_daaress")北京
+                                li
+                                    p(class="tl_daaress")上海
+                                li
+                                    p(class="tl_daaress")成都
+                                li
+                                    p(class="tl_daaress")杭州
+                    br
+                    div.row
+                        div.col-md-12
+                            div.tab-content
+                                div.tab-pane.active
+                                    p.tl_name 北京总部
+                                    p.tl_daaress 北京市亦庄经济技术开发区地盛西路
+                                    p.tl_daaress 咨询热线:010-1111111
+                                div.tab-pane
+                                    p.tl_name 上海分公司
+                                    p.tl_daaress 上海市
+                                    p.tl_daaress 咨询热线:010-1111111
+                                div.tab-pane
+                                    p.tl_name 成都分公司
+                                    p.tl_daaress 成都
+                                    p.tl_daaress 咨询热线:010-1111111
+                                div.tab-pane
+                                    p.tl_name 杭州分公司
+                                    p.tl_daaress 杭州
+                                    p.tl_daaress 咨询热线:010-1111111
+                    br
+                    div.row
+                        div.col-md-12
+                            span.fa.fa-weibo.fa-2x.tl_weibo
+                            span.fa.fa-weixin.fa-2x.tl_weixin
+                div.col-md-1
+                div.col-md-6
+                    div.row
+                        div.col-md-6
+                            form
+                                div.form-group.tl_contact
+                                    input(type="text" class="form-control tl_left"  placeholder="您的姓名" aria-describedby="inputSuccess4Status")
+                                    span(class='fa fa-user-md tl_icon')
+                                div.form-group.tl_contact
+                                    input(type="email" class="form-control tl_left"  placeholder="您的E-mail")
+                                    span(class='fa fa-envelope tl_icon')
+                                div.form-group.tl_contact
+                                    input(type="text" class="form-control tl_left"  placeholder="您的联系方式")
+                                    span(class='fa fa-tablet tl_icon')
+                        div.col-md-6.tl_contact
+                            textarea.form-control(rows="5" placeholder="请输入您的留言内容..." class="tl_left1")
+                            span(class="fa fa-pencil tl_icon1")
+                    div.row
+                        div.col-md-12
+                            button(type="button").btn.btn-default.btn-lg.btn-block 提交留言
